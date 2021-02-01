@@ -1,13 +1,16 @@
 html {
   box-sizing: border-box;
 }
-*, *:before, *:after {
-  box-sizing:inherit;
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
   margin: 0;
   padding: 0;
   font-family: $font-family;
 }
-h1, h2 {
+h1,
+h2 {
   font-size: 144px;
   color: $fontcolor;
 }
@@ -16,17 +19,24 @@ h1, h2 {
   position: fixed;
   top: 0;
   left: 0;
-  ul li {
+  ul {
+    position: fixed;
+    top: 0;
+    right: 0;
     list-style-type: none;
-    padding: 5px;
+    li {
+      padding: 5px;
+      a {
+        list-style-type: none;
+        text-decoration: none;
+        color: $subfontcolor;
+      }
+      a:hover {
+        color: $fontcolor;
+      }
+    
+    }
   }
-
-  ul li a{
-    list-style-type: none;
-    text-decoration: none;
-    color: $subfontcolor;
-  }
-
 }
 
 section {
@@ -36,16 +46,16 @@ section {
   display: inline-block;
   height: 50vh;
   width: 100%;
-  overflow:hidden;
+  overflow: hidden;
 }
 
-.color-block1{
+.color-block1 {
   background-color: $blockcolor1;
 }
-.color-block2{
+.color-block2 {
   background-color: $blockcolor2;
 }
-.color-block3{
+.color-block3 {
   background-color: $blockcolor3;
 }
 .title-header {
