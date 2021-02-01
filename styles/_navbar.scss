@@ -1,0 +1,24 @@
+#nav-bar {
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  ul {
+    position: fixed;
+    top: 0;
+    right: 0;
+    list-style-type: none;
+    li {
+      padding: 5px;
+      a {
+        list-style-type: none;
+        text-decoration: none;
+        color: $subfontcolor;
+      }
+      a:hover {
+        color: $fontcolor;
+      }
+    
+    }
+  }
+}
