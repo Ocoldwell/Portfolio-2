@@ -1,6 +1,7 @@
 html {
   box-sizing: border-box;
   overflow-x: hidden;
+  scroll-snap-type: y mandatory;
 }
 *,
 *:before,
@@ -19,14 +20,14 @@ h2 {
 
 section {
   height: 100vh;
-  scroll-snap-type: y mandatory;
+  width: 100vw;
+  scroll-snap-align: start;
 }
 .block {
   display: inline-block;
   height: 50vh;
   width: 100%;
   overflow: hidden;
-  scroll-snap-align: start;
 }
 
 .color-block1 {
@@ -43,7 +44,6 @@ section {
   bottom: 213px;
   left: 63px;
   line-height: 178px;
-  scroll-snap-align: end;
   .firstword {
     position: relative;
     top: 67px;
