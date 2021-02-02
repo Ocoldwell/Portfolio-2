@@ -17,30 +17,6 @@ h2 {
   color: #0C120C;
 }
 
-#nav-bar {
-  width: 100vw;
-  position: fixed;
-  top: 0;
-  left: 0;
-}
-#nav-bar ul {
-  position: fixed;
-  top: 0;
-  right: 0;
-  list-style-type: none;
-}
-#nav-bar ul li {
-  padding: 5px;
-}
-#nav-bar ul li a {
-  list-style-type: none;
-  text-decoration: none;
-  color: white;
-}
-#nav-bar ul li a:hover {
-  color: #0C120C;
-}
-
 section {
   height: 100vh;
 }
@@ -75,4 +51,28 @@ section {
   top: 67px;
   left: 31px;
   color: white;
+}
+
+#nav-bar {
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+#nav-bar ul {
+  position: fixed;
+  top: 0;
+  right: 0;
+  list-style-type: none;
+}
+#nav-bar ul li {
+  padding: 5px;
+}
+#nav-bar ul li a {
+  list-style-type: none;
+  text-decoration: none;
+  color: white;
+}
+#nav-bar ul li a:hover {
+  color: #0C120C;
 }
