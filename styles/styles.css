@@ -16,7 +16,7 @@ html {
 h1,
 h2 {
   font-size: 144px;
-  color: #0C120C;
+  color: #0c120c;
 }
 
 section {
@@ -33,15 +33,15 @@ section {
 }
 
 .color-block1 {
-  background-color: #F9A620;
+  background-color: #f9a620;
 }
 
 .color-block2 {
-  background-color: #F72C25;
+  background-color: #f72c25;
 }
 
 .color-block3 {
-  background-color: #0EB1D2;
+  background-color: #0eb1d2;
 }
 
 .title-header {
@@ -78,5 +78,5 @@ section {
   color: white;
 }
 #nav-bar ul li a:hover {
-  color: #0C120C;
+  color: #0c120c;
 }
