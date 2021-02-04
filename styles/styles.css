@@ -1,6 +1,15 @@
+* {
+  color: #0C120C;
+}
+
+h2,
+h3 {
+  font-size: calc(60px + 5.28vw);
+  color: #0C120C;
+}
+
 html {
   box-sizing: border-box;
-  overflow-x: hidden;
   scroll-snap-type: y mandatory;
 }
 
@@ -11,72 +20,71 @@ html {
   margin: 0;
   padding: 0;
   font-family: "Montserrat", sans-serif;
-}
-
-h1,
-h2 {
-  font-size: 144px;
-  color: #0c120c;
+  font-weight: 500;
 }
 
 section {
   height: 100vh;
   width: 100vw;
   scroll-snap-align: start;
+  display: grid;
+  grid-template-areas: "title title title" "title title title" "subt subt subt" " subt subt subt";
 }
-
-.block {
-  display: inline-block;
+section #color2 {
+  background-color: #F72C25;
+}
+section #color3 {
+  background-color: #0EB1D2;
+}
+section .title-header {
   height: 50vh;
-  width: 100%;
-  overflow: hidden;
-}
-
-.color-block1 {
-  background-color: #f9a620;
-}
-
-.color-block2 {
-  background-color: #f72c25;
-}
-
-.color-block3 {
-  background-color: #0eb1d2;
-}
-
-.title-header {
+  background-color: #F9A620;
+  grid-area: title;
+  display: flex;
   position: relative;
-  bottom: 213px;
-  left: 63px;
-  line-height: 178px;
+  flex-direction: column;
+  justify-content: flex-end;
 }
-.title-header .firstword {
-  position: relative;
-  top: 67px;
-  left: 31px;
+section .title-header h2 {
+  position: absolute;
+  bottom: 5px;
+  line-height: calc(50px + 2.3vw);
+  left: 60px;
   color: white;
+}
+section .sub-header {
+  height: 50vh;
+  grid-area: subt;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+section .sub-header h3 {
+  position: absolute;
+  top: 10px;
+  line-height: calc(50px + 2.3vw);
+  left: 30px;
 }
 
 #nav-bar {
   width: 100vw;
+  display: flex;
+  justify-content: flex-end;
+  z-index: 4000;
   position: fixed;
   top: 0;
-  left: 0;
 }
 #nav-bar ul {
-  position: fixed;
-  top: 0;
-  right: 0;
   list-style-type: none;
 }
 #nav-bar ul li {
   padding: 5px;
 }
 #nav-bar ul li a {
-  list-style-type: none;
   text-decoration: none;
   color: white;
 }
 #nav-bar ul li a:hover {
-  color: #0c120c;
+  color: #0C120C;
 }

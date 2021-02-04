@@ -1,15 +1,16 @@
 $fontcolor: #0C120C;
 $subfontcolor: white;
-$title-fontsize: 144px;
+$title-fontsize: calc(60px + 5.28vw);
 $boldfontweight: 500;
 $normalfontweight: 300; 
 $font-family: 'Montserrat', sans-serif;
 
-p {
+* {
   color: $fontcolor;
 }
-h1,
-h2 {
-  font-size: 144px;
+h2,
+h3 {
+  font-size: $title-fontsize;
+  
   color: $fontcolor;
 }
