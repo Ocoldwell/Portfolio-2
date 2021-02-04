@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/styles.css" />
+    <script src="scripts/scripts.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap"
@@ -23,7 +24,7 @@
           >
         </li>
         <li>
-          <a href="#Contact-section" class="contactme-link">Contact Me</a>
+          <a href="#Contact-section" class="contactme-link">Contact</a>
         </li>
       </ul>
     </nav>
@@ -55,6 +56,42 @@
       </div>
       <div class="sub-header">
         <h3>Projects.</h3>
+        <div class="slideshow">
+          <div class="projects fade">
+            <div class="numberSlide"> 1/5 </div>
+             <img src="./assets/images/puppy1.jpg" style="width:100%">
+             <div class="text">Project 1</div>
+          </div>
+          <div class="projects fade">
+            <div class="numberSlide"> 2/5 </div>
+             <img src="./assets/images/puppy2.jpg" style="width:100%">
+             <div class="text">Project 2</div>
+          </div>
+          <div class="projects fade">
+            <div class="numberSlide"> 3/5 </div>
+             <img src="./assets/images/puppy3.jpg">
+             <div class="text">Project 3</div>
+          </div>
+          <div class="projects fade">
+            <div class="numberSlide"> 4/5 </div>
+             <img src="./assets/images/puppy-3709494_1280.jpg" >
+             <div class="text">Project 4</div>
+          </div>
+          <div class="projects fade">
+            <div class="numberSlide"> 5/5 </div>
+             <img src="./assets/images/7504171684_b72118efa5_w.jpg">
+             <div class="text">Project 5</div>
+          </div>
+          <a class="prev" onclick="plusSlides(-1) ">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+        <div class=>
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+          <span class="dot" onclick="currentSlide(5)"></span>
       </div>
     </section>
     <section id="Contact-section">
