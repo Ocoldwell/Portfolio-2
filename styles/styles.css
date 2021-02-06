@@ -13,9 +13,7 @@ html {
   scroll-snap-type: y mandatory;
 }
 
-*,
-*:before,
-*:after {
+* {
   box-sizing: inherit;
   margin: 0;
   padding: 0;
@@ -209,5 +207,4 @@ i {
 #social-card-container a {
   text-decoration: none;
   color: #0C120C;
-  text-align: center;
 }
