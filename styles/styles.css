@@ -11,6 +11,7 @@ h3 {
 html {
   box-sizing: border-box;
   scroll-snap-type: y mandatory;
+  overflow-x: hidden;
 }
 
 * {
@@ -170,8 +171,12 @@ i {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 80px;
+  font-size: 60px;
   transition: 0.7s;
+  color: white;
+}
+
+i:hover {
   color: black;
 }
 
@@ -182,6 +187,7 @@ i {
 
 #social-card-container .social-card:hover .face.face1 .content {
   opacity: 1;
+  justify-content: center;
 }
 
 #social-card-container .social-card:hover .face.face2 {
@@ -191,7 +197,6 @@ i {
 #social-card-container .social-card .face.face2 .content p {
   margin: 0;
   padding: 0;
-  text-align: center;
   color: #0C120C;
 }
 
@@ -200,11 +205,24 @@ i {
   padding: 0;
   color: white;
   font-size: 24px;
-  text-align: center;
   color: #0C120C;
 }
 
 #social-card-container a {
   text-decoration: none;
   color: #0C120C;
+}
+
+#social-card-container a:hover, #social-card-container a:focus {
+  color: #0EB1D2;
+}
+
+@media screen and (max-width: 800px) {
+  .social-card:nth-child(1) {
+    display: none;
+  }
+
+  .social-card:nth-child(3) {
+    display: none;
+  }
 }
