@@ -11,7 +11,6 @@ html {
   font-weight: 500;
 }
 
-
 section {
   height: 100vh;
   width: 100vw;
@@ -57,5 +56,20 @@ section {
       line-height: calc(50px + 2.3vw);
       left: 30px;
     }
-    }
   }
+}
+
+#aboutme-container {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  .written-text-animation {
+    width: 30vw;
+    font-size: $filler-fontsize;
+  }
+  img {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+  }
+}
