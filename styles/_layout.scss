@@ -69,3 +69,19 @@ section {
   }
   
 }
+@media screen and (max-width: 850px) {
+  .social-card:nth-child(1){
+    display: none;
+  }
+  .social-card:nth-child(3) {
+    display:none;
+  }
+  .title-header h2 {
+    left: 30px;
+    font-size:$mobile-title-fontsize;
+  }
+  .sub-header {
+    font-size:$mobile-title-fontsize;
+    left: 10px;
+  }
+}

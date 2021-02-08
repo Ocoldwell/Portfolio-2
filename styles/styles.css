@@ -67,67 +67,32 @@ section .sub-header h3 {
 }
 
 #aboutme-container {
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-#aboutme-container .written-text-animation {
-  overflow: hidden;
-  position: relative;
+#aboutme-container #typedText {
   width: 30vw;
-  border-right: 2px solid #0C120C;
   font-size: calc(0.5vw + 0.5vh + .5vmin);
-  white-space: wrap;
-  animation: typewriter 4s steps(44) 1s 1 normal both, blinkTextCursor 400ms steps(44) infinite normal;
-}
-#aboutme-container .written-text-animation2 {
-  overflow: hidden;
-  position: relative;
-  width: 30vw;
-  border-right: 2px solid #0C120C;
-  font-size: calc(0.5vw + 0.5vh + .5vmin);
-  white-space: wrap;
-  animation: typewriter 4s steps(44) 6s 1 normal both, blinkTextCursor 400ms steps(44) 6s 4s normal;
-}
-#aboutme-container .written-text-animation3 {
-  overflow: hidden;
-  position: relative;
-  width: 30vw;
-  border-right: 2px solid #0C120C;
-  font-size: calc(0.5vw + 0.5vh + .5vmin);
-  white-space: wrap;
-  animation: typewriter 4s steps(44) 11s 1 normal both, blinkTextCursor 400ms steps(44) 11s 4s normal;
 }
 
-@keyframes typewriter {
-  from {
-    width: 0;
+@media screen and (max-width: 850px) {
+  .social-card:nth-child(1) {
+    display: none;
   }
-  to {
-    width: 30vw;
+
+  .social-card:nth-child(3) {
+    display: none;
   }
-}
-@keyframes blinkTextCursor {
-  from {
-    border-right-color: transparent;
+
+  .title-header h2 {
+    left: 30px;
+    font-size: calc(56px + 5.28vw);
   }
-  to {
-    border-right-color: transparent;
-  }
-}
-@keyframes blinkTextCursor2 {
-  from {
-    border-right-color: transparent;
-  }
-  to {
-    border-right-color: transparent;
-  }
-}
-@keyframes blinkTextCursor3 {
-  from {
-    border-right-color: transparent;
-  }
-  to {
-    border-right-color: transparent;
+
+  .sub-header {
+    font-size: calc(56px + 5.28vw);
+    left: 10px;
   }
 }
 #nav-bar {
@@ -279,14 +244,4 @@ i:hover {
 
 #social-card-container a:hover, #social-card-container a:focus {
   color: #0EB1D2;
-}
-
-@media screen and (max-width: 850px) {
-  .social-card:nth-child(1) {
-    display: none;
-  }
-
-  .social-card:nth-child(3) {
-    display: none;
-  }
 }

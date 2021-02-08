@@ -125,11 +125,3 @@ i:hover {
 #social-card-container a:hover, #social-card-container a:focus {
   color: $blockcolor3;
 }
-@media screen and (max-width: 850px) {
-  .social-card:nth-child(1){
-    display: none;
-  }
-  .social-card:nth-child(3) {
-    display:none;
-  }
-}
