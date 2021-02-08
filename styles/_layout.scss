@@ -14,7 +14,7 @@ html {
 section {
   height: 100vh;
   width: 100vw;
-  scroll-snap-align: center;
+  scroll-snap-align: start;
   display: grid;
   grid-template-areas:
     "title title title"
@@ -60,16 +60,12 @@ section {
 }
 
 #aboutme-container {
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  .written-text-animation {
+  #typedText {
     width: 30vw;
     font-size: $filler-fontsize;
   }
-  img {
-    width: 150px;
-    height: 150px;
-    border-radius: 10px;
-  }
+  
 }
